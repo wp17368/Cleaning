@@ -10,6 +10,6 @@ import { Title } from '@angular/platform-browser';
 })
 export class OfferComponent {
   constructor(private titleService: Title) {
-    this.titleService.setTitle(`Darpres - Usługi`);
+    this.titleService.setTitle(`Darpress - Usługi`);
   }
 }

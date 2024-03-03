@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private projectService: ProjectsService
   ) {
-    this.titleService.setTitle(`Darpres - O Nas`);
+    this.titleService.setTitle(`Darpress - O Nas`);
   }
 }

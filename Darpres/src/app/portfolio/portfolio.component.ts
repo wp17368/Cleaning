@@ -21,6 +21,6 @@ export class PortfolioComponent implements OnInit {
     private titleService: Title,
     private projectService: ProjectsService
   ) {
-    this.titleService.setTitle(`Darpres - Projekty`);
+    this.titleService.setTitle(`Darpress - Projekty`);
   }
 }
