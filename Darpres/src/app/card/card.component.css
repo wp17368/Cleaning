@@ -1,0 +1,51 @@
+.tag {
+  font-size: max(calc(0.8vw + 0.8vh), 14px);
+  font-style: italic;
+  font-weight: 120;
+  line-height: 30px;
+  background: none;
+  color: white;
+}
+h1 {
+  font-size: max(calc(1.3vw + 1.3vh), 20px);
+  font-weight: 120;
+  color: white;
+}
+p {
+  font-size: max(calc(0.8vw + 0.8vh), 14px);
+  font-weight: 100;
+  color: white;
+}
+.modal p {
+  margin: 0;
+}
+.card-footer {
+  background: none;
+  border: none;
+}
+.card {
+  margin: max(calc(1vw + 1vh), 10px);
+  background: none;
+}
+.modal button {
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  font-weight: 200;
+  font-size: max(calc(0.8vw + 0.8vh), 10px);
+  border-style: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 248, 255, 0.598);
+  transition: background-color 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+}
+.modal button:hover {
+  background-color: rgba(255, 255, 255, 0.282);
+  color: white;
+}
+img {
+  height: 50vh;
+  width: 100%; /* Set the width to fill the entire container */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
