@@ -1,0 +1,19 @@
+.jumbotron {
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  margin: 0;
+  background: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px -1px 6px rgba(66, 68, 90, 1);
+}
+p {
+  font-weight: 200;
+  margin: 0;
+  font-size: 5vh;
+}
+h1 {
+  margin: 0;
+  font-weight: 350;
+  font-size: 16vh;
+}
