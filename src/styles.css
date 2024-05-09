@@ -4,9 +4,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-.blur {
-  backdrop-filter: blur(8px);
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -17,7 +15,7 @@ button {
   padding-left: 0.7em;
   padding-right: 0.7em;
   font-weight: 200;
-  font-size: max(calc(0.8vw + 0.8vh), 10px);
+  font-size: max(min(calc(0.8vw + 0.8vh), 10px), 18px);
   border-style: none;
   border-radius: 5px;
   color: rgb(0, 0, 0);
@@ -33,10 +31,11 @@ button:focus {
   box-shadow: none;
 }
 .box {
-  background-color: rgba(0, 0, 0, 0.556);
+  background-color: #202020;
   -webkit-box-shadow: 2px 1px 35px -5px rgba(66, 68, 90, 1);
   -moz-box-shadow: 2px 1px 35px -5px rgba(66, 68, 90, 1);
   box-shadow: 2px 1px 35px -5px rgba(66, 68, 90, 1);
+  border-radius: 1vh;
 }
 .modal {
   position: fixed;
@@ -50,5 +49,21 @@ button:focus {
 }
 .modal-content {
   color: white;
-  background-color: rgba(255, 255, 255, 0.187);
+  background-color: rgb(32, 32, 32);
+}
+h1 {
+  font-size: max(calc(1.3vw + 1.3vh), 20px);
+  font-weight: 120;
+  color: white;
+}
+p {
+  font-size: max(min(calc(0.8vw + 0.8vh), 18px), 14px);
+  font-weight: 100;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
 }

@@ -4,14 +4,13 @@
   color: rgb(255, 255, 255);
 }
 h2 {
+  color: white;
   font-weight: 250;
   padding-bottom: 0.3em;
+  font-size: max(min(calc(1.3vw + 1.3vh), 30px), 18px);
 }
 h4 {
   font-weight: 250;
-}
-.blur {
-  border-radius: 1vh;
 }
 p {
   padding-left: 1em;

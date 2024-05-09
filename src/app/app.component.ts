@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { NgFor } from '@angular/common';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { HeaderComponent } from "./header/header.component";
+import { NavComponent } from "./nav/nav.component";
+import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { NgClass, NgFor } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [
     RouterOutlet,
@@ -14,10 +16,13 @@ import { NgFor } from '@angular/common';
     NavComponent,
     PortfolioComponent,
     NgFor,
+    FormsModule,
+    HttpClientModule,
+    NgClass,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
 export class AppComponent {
-  title = 'Darpress';
+  title = "Darpress";
 }

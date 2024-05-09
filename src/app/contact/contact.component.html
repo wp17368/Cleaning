@@ -1,1 +1,93 @@
-<p>contact works!</p>
+<div class="container box">
+  <div class="row">
+    <div class="col-lg">
+      <div [hidden]="submitted">
+        <div class="phone text-center">
+          <div class="text-center mt-2">
+            <h3 class="title">Zadzwoń do Nas:</h3>
+          </div>
+          <p>
+            <a class="telephone" href="tel:+48572943942"
+              ><img class="telephone-icon" src="assets/telephone-icon.png" />
+              572 943 942</a
+            >
+          </p>
+        </div>
+        <div class="text-center">
+          <h3 class="title">lub wyślij wiadomość:</h3>
+        </div>
+        <div class="text-center">
+          <form #contactForm="ngForm" (ngSubmit)="sendData()">
+            <div class="field text-center">
+              <input
+                type="text"
+                name="name"
+                class="input"
+                placeholder="Imię"
+                [(ngModel)]="name"
+                #nameInput="ngModel"
+                required
+              />
+            </div>
+            <div
+              class="errorMessage text-center p-2"
+              *ngIf="nameInput.invalid && nameInput.touched"
+            >
+              <p>To pole jest wymagane</p>
+            </div>
+            <div class="field text-center">
+              <input
+                type="email"
+                name="email"
+                class="input"
+                placeholder="Email"
+                [(ngModel)]="email"
+                #emailInput="ngModel"
+                required
+                email
+              />
+            </div>
+            <div
+              class="errorMessage text-center p-2"
+              *ngIf="emailInput.invalid && emailInput.touched"
+            >
+              <p>Podaj swój adres mailowy (taki który istnieje 😄)</p>
+            </div>
+
+            <div class="field text-center">
+              <textarea
+                class="message"
+                type="text"
+                name="message"
+                placeholder="Twoja wiadomość"
+                required
+                [(ngModel)]="message"
+                #messageInput="ngModel"
+              ></textarea>
+            </div>
+            <div
+              class="errorMessage text-center p-2"
+              *ngIf="messageInput.invalid && messageInput.touched"
+            >
+              <p>To pole jest wymagane</p>
+            </div>
+
+            <div class="button-div text-center">
+              <button type="submit" [disabled]="!contactForm.valid">
+                Wyślij
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container box" [hidden]="!submitted">
+        <div class="text-center p-2">
+          <h2 class="title text-center">
+            Dziękujemy za kontakt :) <br />
+            Wkrótce odezwiemy się do Ciebie!
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

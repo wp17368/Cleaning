@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { ProjectsService } from '../_services/projects.service';
-import { Project } from '../_models/project';
-import { RouterLink } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { Title } from "@angular/platform-browser";
+import { ProjectsService } from "../_services/projects.service";
+import { Project } from "../_models/project";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  templateUrl: "./home.component.html",
+  styleUrl: "./home.component.css",
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private projectService: ProjectsService
   ) {
-    this.titleService.setTitle(`Darpress - O Nas`);
+    this.titleService.setTitle(`O Nas`);
   }
 }

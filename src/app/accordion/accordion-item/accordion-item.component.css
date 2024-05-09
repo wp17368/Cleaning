@@ -1,0 +1,46 @@
+.hideBody {
+  height: 0px;
+  color: rgba(240, 248, 255, 0);
+  font-size: max(calc(0.8vw + 0.8vh), 0.14px);
+  font-weight: 10;
+}
+.showBody {
+  font-size: max(calc(0.85vw + 0.85vh) 12px);
+  font-weight: 150;
+  color: white;
+  transition: 0.6s;
+}
+i:hover {
+  cursor: pointer;
+}
+.title:hover {
+  cursor: pointer;
+}
+.box {
+  padding: 0.5rem;
+}
+i {
+  display: inline-block;
+  color: white;
+  font-weight: 100;
+}
+h1 {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0;
+  font-size: max(min(calc(1.3vw + 1.3vh), 30px), 18px);
+  font-weight: 220;
+  line-height: 6vh;
+}
+.body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.border {
+  border-radius: 1vh;
+  border-style: none !important;
+}
+.container {
+  width: 60vw;
+}

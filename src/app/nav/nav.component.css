@@ -1,13 +1,27 @@
+.icon {
+  height: max(calc(1vw + 1vh), 14px);
+  height: min(calc(0.8vw + 0.8vh), 20px);
+  padding-left: max(calc(0.2vw + 0.2vh), 4px);
+  padding-right: max(calc(0.2vw + 0.2vh), 4px);
+}
+.row {
+  width: 100%;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
 a {
   font-weight: 300;
-  font-size: max(calc(0.8vw + 0.8vh), 14px);
+  font-size: min(calc(0.8vw + 0.8vh), 20px);
+  font-size: max(calc(0.6vw + 0.6vh), 14px);
 }
 .nav-item .nav-link {
   color: rgb(255, 255, 255) !important;
   transition-duration: 200ms;
 }
 .nav-item a:hover {
-  color: rgba(0, 0, 0, 0.485) !important;
+  color: rgb(126, 126, 126) !important;
 }
 .nav-item a:active {
   color: rgba(0, 0, 0, 0.212) !important;
@@ -17,4 +31,33 @@ nav {
   top: 0;
   backdrop-filter: blur(8px);
   z-index: 100;
+  height: max(calc(3vw + 3vh), 20px) 20px;
+  border-radius: 0;
+  width: 100vw;
+}
+.telephone-icon {
+  width: 1em;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 490px) {
+  .hidden-s {
+    display: none;
+  }
+}
+@media screen and (max-width: 385px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .justify-content-nav {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 491px) {
+  .justify-content-nav {
+    justify-content: space-between;
+  }
 }

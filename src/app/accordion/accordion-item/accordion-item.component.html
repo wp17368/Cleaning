@@ -1,0 +1,22 @@
+<div class="text-center">
+  <div class="row">
+    <div class="col-lg border">
+      <div class="title" [class.border-bottom]="isMoreVisible">
+        <h1 (click)="toggleMore()">{{ title }}</h1>
+        <i *ngIf="!isMoreVisible" (click)="toggleMore()">↓</i>
+        <i *ngIf="isMoreVisible" (click)="toggleMore()">↑</i>
+      </div>
+
+      <div>
+        <div
+          class="body"
+          [class.hideBody]="!isMoreVisible"
+          [class.showBody]="isMoreVisible"
+          [class.border-bottom]="isMoreVisible"
+        >
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

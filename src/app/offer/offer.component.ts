@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component } from "@angular/core";
+import { Title } from "@angular/platform-browser";
+import { AccordionModule } from "../accordion/accordion.module";
 
 @Component({
-  selector: 'app-offer',
+  selector: "app-offer",
   standalone: true,
-  imports: [],
-  templateUrl: './offer.component.html',
-  styleUrl: './offer.component.css',
+  imports: [AccordionModule],
+  templateUrl: "./offer.component.html",
+  styleUrl: "./offer.component.css",
 })
 export class OfferComponent {
   constructor(private titleService: Title) {
-    this.titleService.setTitle(`Darpress - Usługi`);
+    this.titleService.setTitle(`Usługi`);
   }
 }

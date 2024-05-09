@@ -1,0 +1,64 @@
+{
+  "hash": "de3eacc1",
+  "configHash": "6baabc39",
+  "lockfileHash": "570e8d99",
+  "browserHash": "40b1688a",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "d4698f4b",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "95888dd3",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "7b58cabc",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "6ff12f6d",
+      "needsInterop": false
+    },
+    "ngx-bootstrap/modal": {
+      "src": "../../../../../node_modules/ngx-bootstrap/modal/fesm2022/ngx-bootstrap-modal.mjs",
+      "file": "ngx-bootstrap_modal.js",
+      "fileHash": "a8425b3a",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "0acf5732",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "fcc923ed",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YTMUWLH7": {
+      "file": "chunk-YTMUWLH7.js"
+    },
+    "chunk-PE57HGFF": {
+      "file": "chunk-PE57HGFF.js"
+    },
+    "chunk-NINM53LF": {
+      "file": "chunk-NINM53LF.js"
+    },
+    "chunk-TIXQ3JTR": {
+      "file": "chunk-TIXQ3JTR.js"
+    }
+  }
+}

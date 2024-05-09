@@ -1,15 +1,49 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { NgIf } from "@angular/common";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Component, OnInit } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { Title } from "@angular/platform-browser";
 
 @Component({
-  selector: 'app-contact',
+  selector: "app-contact",
   standalone: true,
-  imports: [],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css',
+  imports: [FormsModule, NgIf],
+  templateUrl: "./contact.component.html",
+  styleUrl: "./contact.component.css",
 })
-export class ContactComponent {
-  constructor(private titleService: Title) {
-    this.titleService.setTitle(`Darpress - Kontakt`);
+export class ContactComponent implements OnInit {
+  submitted = false;
+  constructor(private titleService: Title, private http: HttpClient) {
+    this.titleService.setTitle(`Kontakt`);
+  }
+  name: string = "";
+  email: string = "";
+  message: string = "";
+
+  ngOnInit() {}
+
+  async sendData() {
+    console.log("hi");
+    const url = "https://formsubmit.co/ajax/piatywymiar74@gmail.com";
+    const headers = new HttpHeaders({
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    });
+
+    const data = {
+      name: this.name,
+      email: this.email,
+      message: this.message,
+    };
+    this.submitted = true;
+    try {
+      //read on the deprecated method ->
+      const response = await this.http.post(url, data, { headers }).toPromise();
+      console.log(response);
+      return response;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
   }
 }
